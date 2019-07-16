@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bephp/router": "^1.1"
+    }
+}
