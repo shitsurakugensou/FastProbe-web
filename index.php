@@ -15,6 +15,9 @@ define("APP_ROOT", __DIR__);
 // 核心目录
 define("APP_CORE", __DIR__ . "/FastProbe");
 
+// 视图目录
+define("APP_VIEW", __DIR__ . "/FastProbe/view");
+
 require_once APP_CORE . "/FastProbe.php";
 
 $app = new \FastProbe\FastProbe();
