@@ -10,5 +10,5 @@
  */
 
 $router->get("/", function (){
-    echo "qaq";
+    include_once APP_VIEW . "/serverlist.php";
 });
