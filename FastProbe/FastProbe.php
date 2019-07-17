@@ -14,6 +14,9 @@ namespace FastProbe;
 // composer
 require APP_ROOT . "/vendor/autoload.php";
 
+// functions
+require APP_CORE . "/Functions.php";
+
 use Dotenv\Dotenv;
 use \Router;
 
