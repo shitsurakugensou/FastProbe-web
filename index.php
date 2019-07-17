@@ -9,6 +9,9 @@
  * Copyright © 2019 SaigyoujiYuyuko. All rights reserved.
  */
 
+// 启动时间
+define("APP_START", microtime(true));
+
 // 根目录
 define("APP_ROOT", __DIR__);
 
