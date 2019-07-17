@@ -29,6 +29,9 @@ class FastProbe {
         $conf = Dotenv::create(APP_ROOT);
         $conf->load();
 
+        // load file
+        $this->loadFile();
+
         // load router
         $this->loadRouter();
 
@@ -46,6 +49,22 @@ class FastProbe {
         }
 
         $router->run();
+
+    }
+
+    protected function loadFile(){
+
+        $controllerDir = scandir(APP_ROOT . "/App/Controller");
+
+        for ($i = 2; $i < count($controllerDir); $i++){
+            include_once APP_ROOT . "/App/Controller/" . $controllerDir[$i];
+        }
+
+        $modelDir = scandir(APP_ROOT . "/App/Model");
+
+        for ($i = 2; $i < count($modelDir); $i++){
+            include_once APP_ROOT . "/App/Model/" . $modelDir[$i];
+        }
 
     }
 
