@@ -10,5 +10,5 @@
  */
 
 $router->get("/", function (){
-    include_once APP_VIEW . "/serverlist.php";
+    return view("serverlist");
 });
